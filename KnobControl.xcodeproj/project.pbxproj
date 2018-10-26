@@ -10,6 +10,7 @@
 		D7CD03E12182F569000D2C14 /* KnobControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CD03D72182F569000D2C14 /* KnobControl.framework */; };
 		D7CD03E62182F569000D2C14 /* KnobControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD03E52182F569000D2C14 /* KnobControlTests.swift */; };
 		D7CD03E82182F569000D2C14 /* KnobControl.h in Headers */ = {isa = PBXBuildFile; fileRef = D7CD03DA2182F569000D2C14 /* KnobControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7CD03F22182F5FC000D2C14 /* KnobRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD03F12182F5FC000D2C14 /* KnobRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D7CD03E02182F569000D2C14 /* KnobControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnobControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CD03E52182F569000D2C14 /* KnobControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobControlTests.swift; sourceTree = "<group>"; };
 		D7CD03E72182F569000D2C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7CD03F12182F5FC000D2C14 /* KnobRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				D7CD03DA2182F569000D2C14 /* KnobControl.h */,
 				D7CD03DB2182F569000D2C14 /* Info.plist */,
+				D7CD03F12182F5FC000D2C14 /* KnobRenderer.swift */,
 			);
 			path = KnobControl;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					D7CD03D62182F569000D2C14 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					D7CD03DF2182F569000D2C14 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CD03F22182F5FC000D2C14 /* KnobRenderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		D7CD03EC2182F569000D2C14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.KnobControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		D7CD03ED2182F569000D2C14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		D7CD03EF2182F569000D2C14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KnobControlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		D7CD03F02182F569000D2C14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KnobControlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
